@@ -6,10 +6,22 @@
     border: 1rem solid black;
     border-radius: 20%;
 
-    @include media-query($phone-screen) {
+    @include media-query($large-phone-screen) {
+        height: 13rem;
+        width: 13rem;
+        border: 0.6rem solid black;
+    }
+
+    @include media-query($middle-phone-screen) {
         height: 10rem;
         width: 10rem;
-        border: 0.6rem solid black;
+        border: 0.4rem solid black;
+    }
+
+    @include media-query($small-phone-screen) {
+        height: 8rem;
+        width: 8rem;
+        border: 0.3rem solid black;
     }
 }
 
@@ -40,13 +52,41 @@
 }
 
 .tryAgainButton {
-    font-family: "Press Start 2P", cursive;
-    background-color: rgb(255, 145, 0);
-    color: #ff0000;
-    font-size: 3rem;
-    margin: 15rem auto;
+    font-family: "VT323", cursive;
+
+    font-size: 4rem;
+    background-color: rgb(0, 0, 0);
+
+    margin: 15rem 2rem;
     padding: 2rem;
 
     outline: none;
+    border-radius: 1rem;
     border: none;
+
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: white;
+        transform: translateY(-1rem);
+        box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+        background-color: whitesmoke;
+        transform: translateY(-0.7rem);
+        box-shadow: 0rem 0.8rem 1rem rgba(0, 0, 0, 0.2);
+    }
+
+    span {
+        background: linear-gradient(
+            to right,
+            rgb(255, 0, 76),
+            rgb(255, 208, 0),
+            rgb(255, 0, 85)
+        );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
 }

@@ -1,4 +1,6 @@
-$phone-screen: 32.5em;
+$large-phone-screen: 32.5em; // 520px
+$middle-phone-screen: 25em; // 400px
+$small-phone-screen: 19em; // 304px
 
 @mixin media-query($breakpoint) {
     @media only screen and (max-width: $breakpoint) {

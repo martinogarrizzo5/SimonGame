@@ -116,7 +116,7 @@ function checkUserInput() {
             }, 200);
             $(".container").html(
                 "<h1 id='level-title' class='game-over-text'>GAME OVER</h1>" +
-                    "<button class='tryAgainButton'>try again</button>"
+                    "<button class='tryAgainButton'><span>try again<span></button>"
             );
             ReloadGame();
             return;

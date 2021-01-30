@@ -53,9 +53,19 @@ footer {
   border-radius: 20%; }
   @media only screen and (max-width: 32.5em) {
     .btn {
+      height: 13rem;
+      width: 13rem;
+      border: 0.6rem solid black; } }
+  @media only screen and (max-width: 25em) {
+    .btn {
       height: 10rem;
       width: 10rem;
-      border: 0.6rem solid black; } }
+      border: 0.4rem solid black; } }
+  @media only screen and (max-width: 19em) {
+    .btn {
+      height: 8rem;
+      width: 8rem;
+      border: 0.3rem solid black; } }
 
 .game-over {
   background-color: red;
@@ -78,14 +88,28 @@ footer {
   background-color: grey; }
 
 .tryAgainButton {
-  font-family: "Press Start 2P", cursive;
-  background-color: #ff9100;
-  color: #ff0000;
-  font-size: 3rem;
-  margin: 15rem auto;
+  font-family: "VT323", cursive;
+  font-size: 4rem;
+  background-color: black;
+  margin: 15rem 2rem;
   padding: 2rem;
   outline: none;
-  border: none; }
+  border-radius: 1rem;
+  border: none;
+  transition: all 0.3s; }
+  .tryAgainButton:hover {
+    background-color: white;
+    transform: translateY(-1rem);
+    box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+  .tryAgainButton:active {
+    background-color: whitesmoke;
+    transform: translateY(-0.7rem);
+    box-shadow: 0rem 0.8rem 1rem rgba(0, 0, 0, 0.2); }
+  .tryAgainButton span {
+    background: linear-gradient(to right, #ff004c, #ffd000, #ff0055);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; }
 
 .header {
   font-family: "VT323", cursive;
@@ -93,5 +117,7 @@ footer {
   color: #fef2bf; }
 
 .game-over-text {
-  font-size: 3rem;
-  color: white; }
+  font-size: 4rem;
+  font-family: "Potta One", cursive;
+  color: red;
+  margin-top: 5rem; }
