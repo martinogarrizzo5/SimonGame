@@ -32,7 +32,7 @@ function handleMobileVersion() {
     }
 
     if (isMobileDevice) {
-        $("#level-title").html("Tap the screen start");
+        $("#level-title").html("Tap the screen to start");
     }
 }
 
