@@ -1,0 +1,97 @@
+html {
+  font-size: 62.5%; }
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
+  background-image: url("./img/wooden-background.jpg");
+  background-position: cover;
+  background-position: center;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  user-select: none; }
+
+.layout-grid {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%); }
+
+.header {
+  padding-top: 5rem; }
+
+.container {
+  width: 100%; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  font-size: 1.5rem;
+  font-family: "Potta One", cursive; }
+
+.btn {
+  margin: 2.5rem;
+  display: inline-block;
+  height: 20rem;
+  width: 20rem;
+  border: 1rem solid black;
+  border-radius: 20%; }
+  @media only screen and (max-width: 32.5em) {
+    .btn {
+      height: 10rem;
+      width: 10rem;
+      border: 0.6rem solid black; } }
+
+.game-over {
+  background-color: red;
+  opacity: 0.8; }
+
+.red {
+  background-color: red; }
+
+.green {
+  background-color: green; }
+
+.blue {
+  background-color: blue; }
+
+.yellow {
+  background-color: yellow; }
+
+.pressed {
+  box-shadow: 0 0 2rem white;
+  background-color: grey; }
+
+.tryAgainButton {
+  font-family: "Press Start 2P", cursive;
+  background-color: #ff9100;
+  color: #ff0000;
+  font-size: 3rem;
+  margin: 15rem auto;
+  padding: 2rem;
+  outline: none;
+  border: none; }
+
+.header {
+  font-family: "VT323", cursive;
+  font-size: 5rem;
+  color: #fef2bf; }
+
+.game-over-text {
+  font-size: 3rem;
+  color: white; }

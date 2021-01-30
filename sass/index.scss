@@ -1,0 +1,57 @@
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+
+    background-image: url("./img/wooden-background.jpg");
+    background-position: cover;
+    background-position: center;
+
+    // make text not selectable by user
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.layout-grid {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.header {
+    padding-top: 5rem;
+}
+
+.container {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    background-color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: "Potta One", cursive;
+}
